@@ -1,0 +1,103 @@
+:root {
+  --main-color: #13191b;
+  --text-color: #fbfdfd;
+}
+img {
+  width: 100%;
+}
+.container {
+  text-align: center;
+  padding: 0 30px;
+}
+body {
+  font-family: "Titan One", sans-serif;
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+/* landing style */
+#home {
+  position: relative;
+}
+.content {
+  position: relative;
+  text-align: center;
+}
+#space-invader {
+  --shape-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: -50px;
+  right: 0;
+  z-index: -1;
+  transform: rotate(45deg) translateY(-200%);
+  box-shadow: 0 0 0 1em var(--shape-color), 0 1em 0 1em var(--shape-color),
+    -2.5em 1.5em 0 0.5em var(--shape-color),
+    2.5em 1.5em 0 0.5em var(--shape-color), -3em -3em 0 0 var(--shape-color),
+    3em -3em 0 0 var(--shape-color), -2em -2em 0 0 var(--shape-color),
+    2em -2em 0 0 var(--shape-color), -3em -1em 0 0 var(--shape-color),
+    -2em -1em 0 0 var(--shape-color), 2em -1em 0 0 var(--shape-color),
+    3em -1em 0 0 var(--shape-color), -4em 0 0 0 var(--shape-color),
+    -3em 0 0 0 var(--shape-color), 3em 0 0 0 var(--shape-color),
+    4em 0 0 0 var(--shape-color), -5em 1em 0 0 var(--shape-color),
+    -4em 1em 0 0 var(--shape-color), 4em 1em 0 0 var(--shape-color),
+    5em 1em 0 0 var(--shape-color), -5em 2em 0 0 var(--shape-color),
+    5em 2em 0 0 var(--shape-color), -5em 3em 0 0 var(--shape-color),
+    -3em 3em 0 0 var(--shape-color), 3em 3em 0 0 var(--shape-color),
+    5em 3em 0 0 var(--shape-color), -2em 4em 0 0 var(--shape-color),
+    -1em 4em 0 0 var(--shape-color), 1em 4em 0 0 var(--shape-color),
+    2em 4em 0 0 var(--shape-color);
+  background: var(--shape-color);
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  margin: 50px 0 70px 65px;
+}
+.mushroom-shape {
+  width: 200px;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  z-index: -1;
+  transform: rotate(-135deg) translateY(-50%);
+}
+.mushroom-shape path,
+.mushroom-shape rect {
+  fill: rgba(0, 0, 0, 0.5);
+}
+/* game page */
+.game-content {
+  max-width: 500px;
+  margin: auto;
+}
+.game-content .memo-card {
+  background-color: var(--text-color);
+  padding: 1.25rem;
+  border-radius: 8px;
+  transition: 1s transform;
+}
+/* .game-content .memo-card:hover {
+  transform: rotateY(180deg);
+} */
+.star-ico {
+  width: 100%;
+  height: auto;
+  transition: 1s transform;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.6);
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+.modal .modal-dialog {
+  width: 100%;
+}
+.modal .modal-dialog .modal-content {
+  background-color: var(--main-color) !important;
+}
+.modal .modal-dialog .modal-body {
+  text-align: center;
+}
+.modal .modal-dialog .modal-body img {
+  width: 100px;
+}
